@@ -1,10 +1,10 @@
   - name: Connection Verify
-    hosts: {{ item }}
+    hosts: "{{ pinghost }}"
     gather_facts: false
     tasks:
       # update for ubuntu
       - name: ping
         ping:
-        with_items:
-          - lotrun01
+#        with_items:
+#          - lotrun01
       
