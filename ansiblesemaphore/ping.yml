@@ -1,10 +1,11 @@
 ---
-  - name: Connection Verify
-    hosts: "{{ pinghost }}"
-    gather_facts: false
-    tasks:
-      # update for ubuntu
-      - name: ping
-        ping:
-          data: crash
+- name: Connection Verify
+  # hosts: "{{ pinghost }}"
+  hosts: lotrun02
+  gather_facts: false
+  tasks:
+    # update for ubuntu
+    - name: ping
+      ping:
+        data: crash
       
