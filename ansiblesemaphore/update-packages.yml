@@ -1,6 +1,7 @@
 ---
 - name: Update Packages
   become: yes
+  hosts: lotrun01
   gather_facts: false
   tasks:
     # update for ubuntu
