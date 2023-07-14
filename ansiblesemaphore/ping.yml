@@ -1,3 +1,4 @@
+---
   - name: Connection Verify
     # hosts: "{{ pinghost }}"
     hosts: "{{ item }}"
@@ -6,7 +7,8 @@
       # update for ubuntu
       - name: ping
         ping:
-        with_items:
-          - lotrun01
-          - lotrun02
+          data: crash
+    with_items:
+      - lotrun01
+      - lotrun02
       
