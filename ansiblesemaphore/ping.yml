@@ -1,6 +1,6 @@
   - name: Connection Verify
     # hosts: "{{ pinghost }}"
-    hosts: " {{ item }} "
+    hosts: "{{ item }}"
     gather_facts: false
     tasks:
       # update for ubuntu
