@@ -1,11 +1,12 @@
   - name: Connection Verify
     # hosts: "{{ pinghost }}"
-    hosts: all
+    hosts: " {{ item }} "
     gather_facts: false
     tasks:
       # update for ubuntu
       - name: ping
         ping:
-#        with_items:
-#          - lotrun01
+        with_items:
+          - lotrun01
+          - lotrun02
       
