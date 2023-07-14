@@ -1,1 +1,11 @@
-
+---
+- name: Update Packages
+  become: yes
+  gather_facts: false
+  tasks:
+    # update for ubuntu
+    - name: updating shell
+      apt:
+        update_cache: yes
+        force_apt_get: yes
+        cache_valid_time: 3600
