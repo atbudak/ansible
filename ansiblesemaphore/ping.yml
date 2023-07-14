@@ -1,0 +1,7 @@
+  - name: Connection Verify
+    hosts: {{ pinghost }}
+    gather_facts: false
+      tasks:
+      # update for ubuntu
+      - name: ping
+        ping:
