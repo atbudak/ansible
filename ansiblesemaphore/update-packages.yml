@@ -2,7 +2,7 @@
 - name: Update Packages
   become: yes
   become_user: root
-  hosts: lotrun01
+  hosts: lotrun02
   gather_facts: false
   tasks:
     # update for ubuntu
