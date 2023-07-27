@@ -1,7 +1,7 @@
 ---
 - name: Update Packages
   become: yes
-  become_user: root
+#  become_user: root
   hosts: lotrun02
   gather_facts: false
   tasks:
